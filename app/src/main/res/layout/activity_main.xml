@@ -11,7 +11,7 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-        <!-- First question with RadioButton -->
+        <!-- First question with RadioButtons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
 
         </LinearLayout>
 
-        <!-- Second question with RadioButton -->
+        <!-- Second question with RadioButtons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -277,6 +277,72 @@
                 android:text="Submit answers"
                 android:layout_margin="32dp" />
         </RelativeLayout>
+
+        <!-- Fifth question with RadioButtons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/question_margin"
+            android:paddingBottom="@dimen/question_padding"
+            android:background="@color/question_background_color">
+
+            <!-- Question -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_text_background_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question"
+                    android:padding="@dimen/question_text_padding"
+                    android:textSize="@dimen/question_text_size"
+                    android:textColor="@color/question_text_color"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/flag_width"
+                android:layout_height="@dimen/flag_height"
+                android:layout_margin="@dimen/flag_margin"
+                android:src="@drawable/germany" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/answer_margin"
+                android:orientation="vertical">
+
+                <!-- Answer -->
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/checkbox_padding_left"
+                    android:text="Brazil"
+                    android:textSize="@dimen/answer_text_size" />
+
+                <!-- Answer -->
+                <RadioButton
+                    android:id="@+id/q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/checkbox_padding_left"
+                    android:text="Germany"
+                    android:textSize="@dimen/answer_text_size"/>
+
+                <!-- Answer -->
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/checkbox_padding_left"
+                    android:text="Russia"
+                    android:textSize="@dimen/answer_text_size" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

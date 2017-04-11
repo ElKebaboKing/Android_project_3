@@ -40,10 +40,14 @@ public class MainActivity extends AppCompatActivity {
         // Boolean for the correct answer of the fourth question
         boolean answer4 = countryName.equals("Spain") || countryName.equals("spain");
 
-        // Sum of correct answers
-        score = (answer1?1:0) + (answer2?1:0) + (answer3?1:0) + (answer4?1:0);
+        // Boolean for the correct answer of the fifth question
+        boolean answer5 = ((RadioButton) findViewById(R.id.q5)).isChecked();
 
-        Toast.makeText(this, "Your score is: " + score + "/4", Toast.LENGTH_SHORT).show();
+
+        // Sum of correct answers
+        score = (answer1?1:0) + (answer2?1:0) + (answer3?1:0) + (answer4?1:0) + (answer5?1:0);
+
+        Toast.makeText(this, "Your score is: " + score + "/5", Toast.LENGTH_SHORT).show();
 
 
     }
