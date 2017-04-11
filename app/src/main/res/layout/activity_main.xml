@@ -77,11 +77,12 @@
 
         </LinearLayout>
 
-        <!-- Middle grey line -->
+        <!-- Grey line -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
+            android:background="@android:color/darker_gray"
+            android:layout_margin="@dimen/grey_line_margin"/>
 
         <!-- Second question with RadioButtons -->
         <LinearLayout
@@ -149,11 +150,12 @@
 
         </LinearLayout>
 
-        <!-- Middle grey line -->
+        <!-- Grey line -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
+            android:background="@android:color/darker_gray"
+            android:layout_margin="@dimen/grey_line_margin"/>
 
         <!-- Third question with CheckBoxes -->
         <LinearLayout
@@ -233,11 +235,12 @@
 
         </LinearLayout>
 
-        <!-- Middle grey line -->
+        <!-- Grey line -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
+            android:background="@android:color/darker_gray"
+            android:layout_margin="@dimen/grey_line_margin"/>
 
         <!-- Fourth question with EditText -->
         <LinearLayout
@@ -281,11 +284,12 @@
 
         </LinearLayout>
 
-        <!-- Middle grey line -->
+        <!-- Grey line -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
+            android:background="@android:color/darker_gray"
+            android:layout_margin="@dimen/grey_line_margin"/>
 
         <!-- Fifth question with RadioButtons -->
         <LinearLayout
