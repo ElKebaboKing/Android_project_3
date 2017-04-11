@@ -12,26 +12,39 @@
         tools:context=".MainActivity">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_margin="@dimen/question_margin"
             android:id="@+id/q1">
-            <TextView
+
+            <!-- Question -->
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="First Question"
-                android:textSize="24sp"/>
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Question"
+                    android:padding="@dimen/question_text_padding"
+                    android:textSize="@dimen/question_text_size"
+                    android:textColor="question_text_color"/>
+            </RelativeLayout>
+
+            <!-- Answer -->
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/checkbox_padding_left"
-                android:textSize="16sp"
+                android:textSize="@dimen/answer_size"
                 android:text="First answer" />
+
+            <!-- Answer -->
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/checkbox_padding_left"
-                android:textSize="16sp"
+                android:textSize="@dimen/answer_size"
                 android:text="Second answer" />
         </LinearLayout>
 
