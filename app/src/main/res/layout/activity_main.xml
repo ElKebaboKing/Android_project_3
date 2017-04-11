@@ -43,7 +43,7 @@
 
             <!-- Answer -->
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/q1_checkBox1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/answer_margin"
@@ -53,6 +53,7 @@
 
             <!-- Answer -->
             <CheckBox
+                android:id="@+id/q1_checkBox2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/checkbox_padding_left"
@@ -62,6 +63,7 @@
 
             <!-- Answer -->
             <CheckBox
+                android:id="@+id/q1_checkBox3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/checkbox_padding_left"
@@ -70,6 +72,7 @@
                 android:layout_marginLeft="@dimen/answer_margin"/>
 
         </LinearLayout>
+
 
     </LinearLayout>
 </ScrollView>
