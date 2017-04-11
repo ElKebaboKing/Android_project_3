@@ -11,13 +11,12 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-        <!-- First question -->
+        <!-- First question with RadioButton -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="@dimen/question_margin"
-            android:id="@+id/q1"
             android:background="@color/question_background_color">
 
             <!-- Question -->
@@ -50,7 +49,6 @@
 
                 <!-- Answer -->
                 <RadioButton
-                    android:id="@+id/q1_radioButton1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/checkbox_padding_left"
@@ -59,7 +57,6 @@
 
                 <!-- Answer -->
                 <RadioButton
-                    android:id="@+id/q1_radioButton2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/checkbox_padding_left"
@@ -68,11 +65,79 @@
 
                 <!-- Answer -->
                 <RadioButton
-                    android:id="@+id/q1_radioButton3"
+                    android:id="@+id/q1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/checkbox_padding_left"
                     android:text="Sweden"
+                    android:textSize="@dimen/answer_text_size" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <!-- Second question with RadioButton -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/question_margin"
+            android:background="@color/question_background_color">
+
+            <!-- Question -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_text_background_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question"
+                    android:padding="@dimen/question_text_padding"
+                    android:textSize="@dimen/question_text_size"
+                    android:textColor="@color/question_text_color"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/flag_width"
+                android:layout_height="@dimen/flag_height"
+                android:layout_margin="@dimen/flag_margin"
+                android:src="@drawable/finland" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/answer_margin"
+                android:paddingLeft="@dimen/checkbox_padding_left"
+                android:orientation="vertical">
+
+                <!-- Answer -->
+                <RadioButton
+                    android:id="@+id/q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/checkbox_padding_left"
+                    android:text="Finland"
+                    android:textSize="@dimen/answer_text_size" />
+
+                <!-- Answer -->
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/checkbox_padding_left"
+                    android:text="Netherlands"
+                    android:textSize="@dimen/answer_text_size"/>
+
+                <!-- Answer -->
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/checkbox_padding_left"
+                    android:text="Norway"
                     android:textSize="@dimen/answer_text_size" />
 
             </RadioGroup>

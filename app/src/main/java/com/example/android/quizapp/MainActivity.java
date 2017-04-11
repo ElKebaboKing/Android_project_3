@@ -19,14 +19,13 @@ public class MainActivity extends AppCompatActivity {
     public void correctQuiz(View view){
 
         // Boolean for the correct answer of the first question
-        boolean answer1 = ((RadioButton) findViewById(R.id.q1_radioButton3)).isChecked();
+        boolean answer1 = ((RadioButton) findViewById(R.id.q1)).isChecked();
+        boolean answer2 = ((RadioButton) findViewById(R.id.q2)).isChecked();
 
+        // Sum of correct answers
+        score = (answer1?1:0) + (answer2?1:0);
 
-
-
-        score = (answer1?1:0);
-
-        Toast.makeText(this, "Your score is: " + score + "/1", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Your score is: " + score + "/2", Toast.LENGTH_SHORT).show();
 
 
     }
