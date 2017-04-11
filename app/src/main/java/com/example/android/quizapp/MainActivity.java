@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         // Sum of correct answers
         score = (answer1?1:0) + (answer2?1:0) + (answer3?1:0) + (answer4?1:0);
 
-        Toast.makeText(this, "Your score is: " + score + "/3", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Your score is: " + score + "/4", Toast.LENGTH_SHORT).show();
 
 
     }
