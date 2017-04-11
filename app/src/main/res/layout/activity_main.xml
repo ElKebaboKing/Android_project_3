@@ -74,7 +74,6 @@
 
             </RadioGroup>
 
-
         </LinearLayout>
 
         <!-- Grey line -->
@@ -146,7 +145,6 @@
                     android:textSize="@dimen/answer_text_size" />
 
             </RadioGroup>
-
 
         </LinearLayout>
 
@@ -230,9 +228,6 @@
                 android:text="Yellow"
                 android:textSize="@dimen/answer_text_size" />
 
-
-
-
         </LinearLayout>
 
         <!-- Grey line -->
@@ -278,9 +273,6 @@
                 android:layout_height="wrap_content"
                 android:inputType="textCapWords"
                 android:hint="Enter name of country here"/>
-
-
-
 
         </LinearLayout>
 

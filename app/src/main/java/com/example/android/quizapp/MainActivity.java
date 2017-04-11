@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         score = (answer1?1:0) + (answer2?1:0) + (answer3?1:0) + (answer4?1:0) + (answer5?1:0);
 
         Toast.makeText(this, "Your score is: " + score + "/5", Toast.LENGTH_SHORT).show();
-
-
+        
     }
 }
