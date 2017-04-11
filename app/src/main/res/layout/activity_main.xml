@@ -44,7 +44,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/answer_margin"
-                android:paddingLeft="@dimen/checkbox_padding_left"
                 android:orientation="vertical">
 
                 <!-- Answer -->
@@ -110,7 +109,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/answer_margin"
-                android:paddingLeft="@dimen/checkbox_padding_left"
                 android:orientation="vertical">
 
                 <!-- Answer -->
@@ -142,6 +140,85 @@
 
 
         </LinearLayout>
+
+        <!-- Third question with CheckBoxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/question_margin"
+            android:background="@color/question_background_color"
+            android:orientation="vertical">
+
+            <!-- Question -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_text_background_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/question_text_padding"
+                    android:text="What colors can you see in the flag below?"
+                    android:textColor="@color/question_text_color"
+                    android:textSize="@dimen/question_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/flag_width"
+                android:layout_height="@dimen/flag_height"
+                android:layout_margin="@dimen/flag_margin"
+                android:src="@drawable/france" />
+
+            <CheckBox
+                android:id="@+id/q3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/answer_margin"
+                android:paddingLeft="@dimen/checkbox_padding_left"
+                android:text="White"
+                android:textSize="@dimen/answer_text_size" />
+
+            <CheckBox
+                android:id="@+id/q3_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/answer_margin"
+                android:paddingLeft="@dimen/checkbox_padding_left"
+                android:text="Blue"
+                android:textSize="@dimen/answer_text_size" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/answer_margin"
+                android:paddingLeft="@dimen/checkbox_padding_left"
+                android:text="Black"
+                android:textSize="@dimen/answer_text_size" />
+
+            <CheckBox
+                android:id="@+id/q3_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/answer_margin"
+                android:paddingLeft="@dimen/checkbox_padding_left"
+                android:text="Red"
+                android:textSize="@dimen/answer_text_size" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/answer_margin"
+                android:paddingLeft="@dimen/checkbox_padding_left"
+                android:text="Yellow"
+                android:textSize="@dimen/answer_text_size" />
+
+
+
+
+        </LinearLayout>
+
 
         <!-- Submit button -->
         <RelativeLayout
