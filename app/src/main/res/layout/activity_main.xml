@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="@dimen/question_margin"
+            android:paddingBottom="@dimen/question_padding"
             android:background="@color/question_background_color">
 
             <!-- Question -->
@@ -82,6 +83,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="@dimen/question_margin"
+            android:paddingBottom="@dimen/question_padding"
             android:background="@color/question_background_color">
 
             <!-- Question -->
@@ -146,6 +148,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/question_margin"
+            android:paddingBottom="@dimen/question_padding"
             android:background="@color/question_background_color"
             android:orientation="vertical">
 
@@ -165,7 +168,6 @@
             </RelativeLayout>
 
             <ImageView
-                android:id="@+id/imageView"
                 android:layout_width="@dimen/flag_width"
                 android:layout_height="@dimen/flag_height"
                 android:layout_margin="@dimen/flag_margin"
@@ -219,6 +221,47 @@
 
         </LinearLayout>
 
+        <!-- Fourth question with EditText -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/question_margin"
+            android:paddingBottom="@dimen/question_padding"
+            android:background="@color/question_background_color"
+            android:orientation="vertical">
+
+            <!-- Question -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_text_background_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/question_text_padding"
+                    android:text="@string/question"
+                    android:textColor="@color/question_text_color"
+                    android:textSize="@dimen/question_text_size" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/flag_width"
+                android:layout_height="@dimen/flag_height"
+                android:layout_margin="@dimen/flag_margin"
+                android:src="@drawable/spain" />
+
+            <EditText
+                android:id="@+id/country_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Enter name of country here"/>
+
+
+
+
+        </LinearLayout>
 
         <!-- Submit button -->
         <RelativeLayout

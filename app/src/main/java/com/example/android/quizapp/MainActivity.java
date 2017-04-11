@@ -4,13 +4,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int score;
-    int questionsAnswered = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void correctQuiz(View view){
+        int score; // The score aquired by the player
 
         // Boolean for the correct answer of the first question
         boolean answer1 = ((RadioButton) findViewById(R.id.q1)).isChecked();
@@ -33,9 +34,14 @@ public class MainActivity extends AppCompatActivity {
         // Boolean for the correct answer of the third question
         boolean answer3 = checkBox1 && checkBox2 && checkBox3;
 
+        // Assign the string countryName with the content of the EditBox.
+        String countryName = ((EditText) findViewById(R.id.country_name)).getText().toString();
+
+        // Boolean for the correct answer of the fourth question
+        boolean answer4 = countryName.equals("Spain") || countryName.equals("spain");
 
         // Sum of correct answers
-        score = (answer1?1:0) + (answer2?1:0) + (answer3?1:0);
+        score = (answer1?1:0) + (answer2?1:0) + (answer3?1:0) + (answer4?1:0);
 
         Toast.makeText(this, "Your score is: " + score + "/3", Toast.LENGTH_SHORT).show();
 
