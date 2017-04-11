@@ -11,41 +11,64 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
+        <!-- First question -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="@dimen/question_margin"
-            android:id="@+id/q1">
+            android:id="@+id/q1"
+            android:background="@color/question_background_color">
 
             <!-- Question -->
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_text_background_color">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="First Question"
+                    android:text="@string/question"
                     android:padding="@dimen/question_text_padding"
                     android:textSize="@dimen/question_text_size"
                     android:textColor="@color/question_text_color"/>
             </RelativeLayout>
 
-            <!-- Answer -->
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/checkbox_padding_left"
-                android:textSize="@dimen/answer_size"
-                android:text="First answer" />
+            <ImageView
+                android:layout_width="@dimen/flag_width"
+                android:layout_height="@dimen/flag_height"
+                android:src="@drawable/sweden"
+                android:layout_margin="@dimen/flag_margin"/>
 
             <!-- Answer -->
             <CheckBox
-                android:layout_width="wrap_content"
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/answer_margin"
+                android:paddingLeft="@dimen/checkbox_padding_left"
+                android:text="The Republic of Kebab"
+                android:textSize="@dimen/answer_text_size" />
+
+            <!-- Answer -->
+            <CheckBox
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/checkbox_padding_left"
-                android:textSize="@dimen/answer_size"
-                android:text="Second answer" />
+                android:textSize="@dimen/answer_text_size"
+                android:text="Germany"
+                android:layout_marginLeft="@dimen/answer_margin"/>
+
+            <!-- Answer -->
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/checkbox_padding_left"
+                android:textSize="@dimen/answer_text_size"
+                android:text="Sweden"
+                android:layout_marginLeft="@dimen/answer_margin"/>
+
         </LinearLayout>
 
     </LinearLayout>
