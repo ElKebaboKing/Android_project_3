@@ -77,7 +77,6 @@
 
         </LinearLayout>
 
-
         <!-- Second question with RadioButton -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,7 +101,6 @@
             </RelativeLayout>
 
             <ImageView
-                android:id="@+id/imageView"
                 android:layout_width="@dimen/flag_width"
                 android:layout_height="@dimen/flag_height"
                 android:layout_margin="@dimen/flag_margin"
