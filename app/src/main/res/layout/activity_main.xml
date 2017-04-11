@@ -77,6 +77,12 @@
 
         </LinearLayout>
 
+        <!-- Middle grey line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
         <!-- Second question with RadioButtons -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -142,6 +148,12 @@
 
 
         </LinearLayout>
+
+        <!-- Middle grey line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
 
         <!-- Third question with CheckBoxes -->
         <LinearLayout
@@ -221,6 +233,12 @@
 
         </LinearLayout>
 
+        <!-- Middle grey line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
         <!-- Fourth question with EditText -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -263,20 +281,11 @@
 
         </LinearLayout>
 
-        <!-- Submit button -->
-        <RelativeLayout
+        <!-- Middle grey line -->
+        <View
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                android:onClick="correctQuiz"
-                android:text="Submit answers"
-                android:layout_margin="32dp" />
-        </RelativeLayout>
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
 
         <!-- Fifth question with RadioButtons -->
         <LinearLayout
@@ -341,8 +350,22 @@
 
             </RadioGroup>
 
-
         </LinearLayout>
+
+        <!-- Submit button -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:onClick="correctQuiz"
+                android:text="Submit answers"
+                android:layout_margin="32dp" />
+        </RelativeLayout>
 
     </LinearLayout>
 </ScrollView>
