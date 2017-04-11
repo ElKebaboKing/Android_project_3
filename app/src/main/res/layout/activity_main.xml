@@ -28,7 +28,7 @@
                     android:text="First Question"
                     android:padding="@dimen/question_text_padding"
                     android:textSize="@dimen/question_text_size"
-                    android:textColor="question_text_color"/>
+                    android:textColor="@color/question_text_color"/>
             </RelativeLayout>
 
             <!-- Answer -->
