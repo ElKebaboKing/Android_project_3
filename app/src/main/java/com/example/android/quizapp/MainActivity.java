@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         String countryName = ((EditText) findViewById(R.id.country_name)).getText().toString().trim();
 
         // Boolean for the correct answer of the fourth question
-        boolean answer4 = countryName.equals("Spain") || countryName.equals("spain");
+        boolean answer4 = countryName.equalsIgnoreCase("Spain");
 
         // Boolean for the correct answer of the fifth question
         boolean answer5 = ((RadioButton) findViewById(R.id.q5)).isChecked();
