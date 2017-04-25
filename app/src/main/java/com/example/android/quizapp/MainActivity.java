@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         boolean answer3 = checkBox1 && checkBox2 && !checkBox3 && checkBox4 && !checkBox5;
 
         // Assign the string countryName with the content of the EditBox.
-        String countryName = ((EditText) findViewById(R.id.country_name)).getText().toString();
+        String countryName = ((EditText) findViewById(R.id.country_name)).getText().toString().trim();
 
         // Boolean for the correct answer of the fourth question
         boolean answer4 = countryName.equals("Spain") || countryName.equals("spain");
