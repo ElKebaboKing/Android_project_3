@@ -30,9 +30,11 @@ public class MainActivity extends AppCompatActivity {
         boolean checkBox1 = ((CheckBox) findViewById(R.id.q3_1)).isChecked();
         boolean checkBox2 = ((CheckBox) findViewById(R.id.q3_2)).isChecked();
         boolean checkBox3 = ((CheckBox) findViewById(R.id.q3_3)).isChecked();
+        boolean checkBox4 = ((CheckBox) findViewById(R.id.q3_4)).isChecked();
+        boolean checkBox5 = ((CheckBox) findViewById(R.id.q3_5)).isChecked();
 
         // Boolean for the correct answer of the third question
-        boolean answer3 = checkBox1 && checkBox2 && checkBox3;
+        boolean answer3 = checkBox1 && checkBox2 && !checkBox3 && checkBox4 && !checkBox5;
 
         // Assign the string countryName with the content of the EditBox.
         String countryName = ((EditText) findViewById(R.id.country_name)).getText().toString();
